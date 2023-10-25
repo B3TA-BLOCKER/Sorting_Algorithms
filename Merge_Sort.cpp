@@ -40,6 +40,7 @@ void Merge(int arr[], int l, int mid, int r)
         }
     }
 
+    // if the second arrays values are filled in the array and the first array have some remaining values
     while (i < size_1)
     {
         arr[k] = arr_1[i];
@@ -47,6 +48,7 @@ void Merge(int arr[], int l, int mid, int r)
         i++;
     }
 
+        // if the first arrays values are filled in the array and the second array have some remaining values
     while (j < size_2)
     {
         arr[k] = arr_2[j];
@@ -72,7 +74,7 @@ int main(void)
     int arr[]= {5,4,3,2,1};
     Merge_Sort(arr,0,4);
 
-    // Displaying the result
+    // Displaying the sorted array 
 
     for(int i=0;i<sizeof(arr)/sizeof(int);i++){
         cout<<arr[i]<<" ";
